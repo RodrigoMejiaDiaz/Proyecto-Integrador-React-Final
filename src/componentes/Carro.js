@@ -13,8 +13,8 @@ export default class Carro extends Component {
                     <ul>
                         {cartItems.map(item =>
                             <li>
-                                <b>{item.producto}</b>
-                                X {item.count} = {item.precio * item.count}
+                                <b>{item.producto} </b>
+                                Cantidad: {item.count} = {item.precio * item.count}
                                 <button className="btn btn-danger"
                                 onClick={(e) =>this.props.handleRemoveFromCart(e, item)}>X</button>
                             </li>)}
