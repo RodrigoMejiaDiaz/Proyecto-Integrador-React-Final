@@ -10,10 +10,7 @@ class Robot extends React.Component {
   }
   
   componentWillMount(){
-    fetch("http://carlosqq.pythonanywhere.com/robot/sensor/",
-    {
-    method: 'GET',
-    })
+    fetch("http://carlosqq.pythonanywhere.com/robot/sensor/")
     .then(res => res.json())
     .then(data =>
       this.setState({
