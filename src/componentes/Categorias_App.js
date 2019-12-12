@@ -59,7 +59,7 @@ class Categorias extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://rodrigomejia.pythonanywhere.com/api/categorias/", 
+        fetch("http://rodrigomejia.pythonanywhere.com/api/categorias/?format=json", 
         {
         method: 'GET',
         headers: {
