@@ -29,8 +29,11 @@ class Robot extends React.Component {
         <div className="row">
       {this.state.datos.map(dato => {
         return(
+      <div>
           <p>Temperatura: {dato.temperatura} </p>
           <p>Humedad: {dato.humedad}</p>
+      </div>
+
         );
       })}
         </div>
