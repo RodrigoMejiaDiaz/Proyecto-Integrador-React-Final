@@ -22,7 +22,13 @@ class Productos_Pagina extends React.Component {
     }
 
     componentWillMount(){
-        fetch("http://rodrigomejia.pythonanywhere.com/api/productos/?format=json")
+        fetch("http://rodrigomejia.pythonanywhere.com/api/productos/?format=json",
+        {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Token f45a50c21f72fa16aa5604d90c7cbab57b74032a'
+            }
+        })
             .then(res => res.json())
             .then(data => 
                 this.setState({
