@@ -45,7 +45,6 @@ render() {
   if(this.state.recuperado)
     return this.mostrarCategorias()
   else
-    return (<div>recuperando datos...</div>
-  }
+    return (<div>recuperando datos...</div>)
 }
 export default Robot;
