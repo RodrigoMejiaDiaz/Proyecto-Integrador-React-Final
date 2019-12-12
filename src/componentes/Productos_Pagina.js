@@ -116,6 +116,7 @@ class Productos_Pagina extends React.Component {
                         <Filter size={this.state.size} sort={this.state.sort} handleChangeCat={this.handleChangeCat}
                                     handleChangeSort={this.handleChangeSort} count={this.state.filteredProducts.length}/>
                                 <hr/>
+                        <Carro cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart}/>
                     </div>
                 </div>
                 <div className="card-deck my-4 d-block d-lg-none d-xl-none">
