@@ -22,7 +22,7 @@ const Navegacion = () => (
                         <Nav className="mr-auto">
                                 <Link to="/" className="nav-link">Home</Link>
                                 <Link to="/productos" className="nav-link">Productos</Link>
-                                <Nav.Link href="#b">Contacto</Nav.Link>
+                                <Link to="/robot" className="nav-link">Robot</Link>
                                 <Nav.Link href="#c">Ubicanos</Nav.Link>
                         </Nav>
                         <Form inline>
