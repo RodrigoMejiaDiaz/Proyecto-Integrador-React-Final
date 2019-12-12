@@ -10,12 +10,9 @@ class Robot extends React.Component {
   }
   
   componentWillMount(){
-    fetch("",
+    fetch("http://carlosqq.pythonanywhere.com/robot/sensor/?format=json",
     {
     method: 'GET',
-    headers: {
-        'Authorization': 'Token '
-      }
     })
     .then(res => res.json())
     .then(data =>
@@ -32,7 +29,8 @@ class Robot extends React.Component {
         <div className="row">
       {this.state.datos.map(dato => {
         return(
-          <p> </p>
+          <p>Temperatura: {dato.temperatura} </p>
+          <p>Humedad: {dato.humedad}</p>
         );
       })}
         </div>
