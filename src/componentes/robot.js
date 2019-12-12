@@ -24,5 +24,27 @@ class Robot extends React.Component {
         recuperado: true,
       }));
   }
-}
+  
+  mostrarDatos() {
+    return(
+      <div>
+        <h1>Datos recibidos por robot</h1>
+        <div className="row">
+      {this.state.datos.map(dato => {
+        return(
+          <p> </p>
+        );
+      })}
+        </div>
+      </div>
+    );
+  }
 
+render() {
+  if(this.state.recuperado)
+    return this.mostrarCategorias()
+  else
+    return (<div>recuperando datos...</div>
+  }
+}
+export default Robot;
