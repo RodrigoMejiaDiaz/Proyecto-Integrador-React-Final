@@ -40,7 +40,7 @@ class Robot extends React.Component {
 
 render() {
   if(this.state.recuperado)
-    return this.mostrarCategorias()
+    return this.mostrarDatos()
   else
     return (<div>
             <p>recuperando datos...</p></div>)
