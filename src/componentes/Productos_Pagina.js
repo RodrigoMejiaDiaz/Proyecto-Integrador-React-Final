@@ -22,7 +22,7 @@ class Productos_Pagina extends React.Component {
     }
 
     componentWillMount(){
-        fetch("http://192.168.244.129:8000/api/productos/")
+        fetch("http://rodrigomejia.pythonanywhere.com/api/productos/?format=json")
             .then(res => res.json())
             .then(data => 
                 this.setState({
