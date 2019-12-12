@@ -9,7 +9,7 @@ class Robot extends React.Component {
     };
   }
   
-  componentWillMount(){
+  componentDidMount(){
     fetch("http://carlosqq.pythonanywhere.com/robot/sensor/?format=json")
     .then(res => res.json())
     .then(data =>
